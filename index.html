@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">saumya <span>sachan</span></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="gradient-btn">Contact Me</button>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm Saumya Sachan</h1>
+      <p>Web Developer | Designer | Coder</p>
+      <p>
+        Welcome to my portfolio! I’m Saumya, a Computer Applications student passionate about coding, UI/UX design, and web development.
+        This site showcases my projects, practice work, and achievements on HackerRank.
+        It reflects my journey of learning, creativity, and problem‑solving.
+      </p>
+      <div class="social-icons">
+        <a href=" https://www.linkedin.com/in/saumya-sachan-537046386?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdjuahxeqRX%2BXvNXAn%2FLi3g%3D%3D" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+      </div>
+       <div class="btn-group">
+        <a href="tel:+917307807745" class="btn">
+        <i class='bx bx-phone'></i> +917307807745</a>
+        
+    </div>
+
+  </section>
+  <section class="about" id="about">
+    <div class="about-image">
+      <img src="img.jpg" alt="">
+    </div>
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Applications student with a passion for coding, UI/UX design, and web development. I have a strong foundation in programming languages such as HTML, CSS, JavaScript, and Python. I enjoy creating visually appealing and user-friendly websites that provide an excellent user experience. I am constantly learning and improving my skills to stay up-to-date with the latest trends in web development.
+      </p>
+      <a href="#" class="btn" onclick="toggleExtraPara()">Read More</a>
+         <p id="extraPara" style="display: none;">
+      Currently, I am trying to improve my skills and I am also learning some UI/UX, 
+      also working as a visual designer in a food BEVERAGE and also working as a content writer . I am always eager to take on new challenges and collaborate with others to create innovative solutions. I am excited to continue my journey in the field of web development and contribute to meaningful projects.
+    </p>
+    </div>
+  </section>
+  <script>
+  function toggleExtraPara() {
+    const para = document.getElementById("extraPara");
+    const btn = document.getElementById("readMoreBtn");
+
+    if (para.style.display === "none") {
+      para.style.display = "block";
+      btn.textContent = "Read Less";
+    } else {
+      para.style.display = "none";
+      btn.textContent = "Read More";
+    }
+  }
+
+  document.getElementById("readMoreBtn").addEventListener("click", toggleExtraPara);
+</script>
+
+
+   <section class="certificates" id="certificates">
+  <h2 class="heading">My Certificates</h2>
+  <div class="certificates-container">
+      <div class="certificate-box">
+        <h3>Certificate Title 1</h3>
+        <p>Issued by:   UDEMY </p>
+        <p>Date: November 24, 2025</p>
+        <p>
+          : Brief Description of the Certificate : </p>
+        <p>This certificate was awarded for successfully completing a course on web design for beginners, covering topics such as HTML, CSS, and responsive design. It demonstrates my commitment to learning and improving my skills in the field of web development.</p>
+       
+      <a href="https://1drv.ms/b/c/2ee99a6cc3afeb10/IQBGVkiFvS7nRLGmCB9rVIIKAWs1XjCRbq_nuc6fNLa-NHA?e=lu4830.pdf" target="_blank">Open Certificate 1 (PDF)</a>
+      </div>
+      <div class="certificate-box">
+        <h3>Certificate Title 2</h3>
+        <p>Issued by:  SIMPLILEARN </p>
+        <p>Date: November 22, 2025</p>
+        <p>
+          : Brief Description of the Certificate : </p>
+        <p>This certificate was awarded for successfully completing a course on Excel Dashboard, covering topics such as data analysis, visualization, and dashboard creation. It demonstrates my proficiency in using Excel for data analysis and creating visually appealing dashboards to present insights effectively.</p>
+      <a href="https://1drv.ms/b/c/2ee99a6cc3afeb10/IQACwAqVVohTQYQQ2B1yam6zAdO57Jyl8bgNqWEZoupjYq8?e=7PVb0h.pdf" target="_blank">Open Certificate 2 (PDF)</a>
+  </div>
+
+</section>
+<section class="projects" id="projects">
+  <h2 class="heading">My Projects</h2>
+  
+  <div class="project">
+    <div class="project-content">
+      <h3>Portfolio Design by Canva</h3>
+      <p>This project showcases a modern and responsive portfolio design created using Canva. It includes a clean layout, intuitive navigation, and visually appealing elements that highlight my skills and projects.</p>
+      <a href="https://saumyaportfolio1.my.canva.site/best-ui-ux-design-2025" target="_blank">View Project 1</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-content">
+      <h3>My live Portfolio</h3>
+      <p>This project demonstrates my skills in HTML, CSS, and JavaScript. It features a responsive design, interactive elements, and a focus on user experience.</p>
+      <a href="https://abc.com/project2" target="_blank">View Project 2</a>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <h2 class="heading">Contact Me</h2>
+  <form action="submit_form.php" method="post" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="gradient-btn">Send Message</button>
+  </form>
+</section>
+  <script src="script.js"></script>
+  
+</body>
+</html>
+
+
