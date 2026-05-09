@@ -530,7 +530,7 @@ img {
   padding: 1rem;
 }
 
-/* 📱 Mobile specific */
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
