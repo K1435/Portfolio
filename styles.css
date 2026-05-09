@@ -428,3 +428,35 @@ color: var(--main-color);
   color: white;
   line-height: 1.6;
 }
+
+@media (max-width: 480px) {
+  html { font-size: 45%; }
+  .header { flex-direction: column; align-items: flex-start; }
+  .navbar { flex-direction: column; width: 100%; }
+  .home { flex-direction: column; gap: 3rem; text-align: center; }
+  .home-content h1 { font-size: 3.5rem; }
+  .home-content p { font-size: 1.4rem; }
+  .about { flex-direction: column; gap: 3rem; text-align: center; }
+  .certificate-box { width: 95%; }
+  .project-content p { font-size: 1.4rem; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html { font-size: 50%; }
+  .header { padding: 1.5rem 5%; }
+  .home { flex-direction: column; gap: 5rem; }
+  .home-content h1 { font-size: 4.5rem; }
+  .about { flex-direction: column; gap: 5rem; }
+  .certificate-box { width: 80%; }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  html { font-size: 55%; }
+  .home { gap: 8rem; }
+  .about { gap: 6rem; }
+  .certificate-box { width: 40vw; }
+}
+@media (min-width: 1025px) {
+  html { font-size: 60%; }
+  .home { gap: 15rem; }
+  .about { gap: 10rem; }
+}
