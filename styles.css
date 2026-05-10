@@ -538,13 +538,17 @@ img {
     gap: 1rem;
   }
   .navbar {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;       
+    justify-content: center;  
+    flex-wrap: wrap;           
+    gap: 1.5rem;              
   }
+
   .navbar a {
-    font-size: 1.8rem;
-    margin: 0.5rem 0;
+    font-size: 1.6rem;        
+    padding: 0.5rem 1rem;      
   }
+}
   .gradient-btn, .btn {
     width: 100%;
     text-align: center;
